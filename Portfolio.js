@@ -1,6 +1,6 @@
 const projects = {
   project1: {
-    images: ['Assets/ERS1.jpg', 'Assets/ERS2.jpg', 'Assets/ERS3.jpg', 'Assets/ERS4.jpg', 'Assets/ERS5.jpg', 'Assets/ERS6.jpg', 'Assets/ERS7.jpg', 'Assets/ERS8.jpg', 'Assets/ERSA1.jpg', 'Assets/ERS2.jpg'],
+    images: ['Assets/ERS1.JPG', 'Assets/ERS2.JPG', 'Assets/ERS3.JPG', 'Assets/ERS4.JPG', 'Assets/ERS5.JPG', 'Assets/ERS6.JPG', 'Assets/ERS7.JPG', 'Assets/ERS8.JPG', 'Assets/ERSA1.JPG', 'Assets/ERS2.JPG'],
     details: `<h3>PulsePoint (Emergency Response System)</h3>
 						<h4><u>Frameworks/Tools/Languages Used:</u></h4>
 						<p> PHP, JavaScript, CSS, HTML, JAVA, SQLs (for Analytics), Microsoft Access (for Storing Information for the Dispatchers and Respondents) and Microsoft Excel (for Incident Reports)</p><br>
