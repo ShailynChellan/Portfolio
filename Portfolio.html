@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shailyn Chellan's Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css"/>
+</head>
+<body>
+<div class="header">
+  <h1>Shailyn Chellan’s Portfolio</h1>
+<div id="aboutIcon" onclick="openAboutModal()" class="about-button" title="About Me">👤</div>
+</div>
+
+
+  <main class="project-list">
+    <!-- Repeat this block for each project -->
+    <div class="project-card" onclick="openModal('project1')">
+      <h2>Project 1: PulsePoint (Emergency Response System) </h2>
+    </div>
+    <div class="project-card" onclick="openModal('project2')">
+      <h2>Project 2: Towers of Hanoi</h2>
+    </div>
+    <div class="project-card" onclick="openModal('project3')">
+      <h2>Project 3: Flappy Bird Remake</h2>
+    </div>
+    <!-- Add more projects here -->
+  </main>
+
+  <!-- Modal Template -->
+  <div id="modal" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal(event)">&times;</span>
+      <div class="modal-body">
+        <div class="modal-screenshots" id="modalScreenshots">
+          <!-- Images inserted via JS -->
+        </div>
+        <div class="modal-details" id="modalDetails">
+          <!-- Description inserted via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Portfolio.js"></script>
+  
+  <!-- Fullscreen Image Viewer -->
+<div id="imageViewer" class="image-viewer">
+  <span class="close-img" onclick="closeImageViewer()">&times;</span>
+  <span class="nav-arrow left-arrow" onclick="prevImage()">&#10094;</span>
+  <img id="fullImage" src="" alt="Enlarged Screenshot">
+  <span class="nav-arrow right-arrow" onclick="nextImage()">&#10095;</span>
+</div>
+
+<!-- About Me Modal -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+<span class="close about-close" onclick="closeAboutModal()">&times;</span>
+    
+    <!-- Scrollable container inside modal-content -->
+    <div class="modal-scroll">
+	 <h2>About Me</h2>
+	  <p>My name is <strong>Shailyn Chellan</strong>, I’m 22 years old, and I’m an aspiring software developer with a deep-rooted passion for technology. My interest in this field began as early as primary school, where I found myself captivated by the idea that just a few lines of code could produce something entirely functional—and often beautiful—on a screen. That early fascination led me down a path of curiosity and exploration. In Grade 7, I started researching on my own, tinkering with old hardware around the house, watching tutorials on YouTube, and even experimenting with developer modes and source code on outdated tablets—sometimes breaking them in the process, but always learning something new.</p>
+      <p>Now, over a decade later, that same passion drives me every day. As I’ve progressed through both high school and college, I’ve continued to expand my understanding of information technology, from learning new programming languages and frameworks to building full-fledged projects both in and outside of the classroom. One of the things I love most about this field is that it’s ever-evolving; there’s always something new to learn, a better way to build, and opportunities to grow. Whether it’s staying up late trying to solve a bug, exploring a new tool I haven’t used before, or reading up on the latest tech trends, I find real joy in the learning process.</p>
+	  <p>I consider myself a hardworking, passionate, and goal-driven individual. Throughout my time in college, I’ve consistently pushed myself to do more, not just to pass, but to truly understand and improve. I’ve tackled challenging assignments and projects with enthusiasm, often going beyond the requirements to explore additional features or techniques that could enhance my learning.</p>
+	  <p>I take pride in being a lifelong learner. I'm always seeking out new skills, whether it's a programming language I haven't touched yet, a development environment I haven't worked in, or even a completely new area like UI/UX or machine learning. I firmly believe that every challenge is a chance to grow, and that mindset has helped shape me into the developer I am today—and the one I’m striving to become.</p>
+      <h3>Download my CV:</h3>
+      <a href="assets/S Chellan CV.pdf" download class="download-btn">📄 Download CV</a>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
