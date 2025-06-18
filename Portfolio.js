@@ -1,6 +1,6 @@
 const projects = {
   project1: {
-    images: ['assets/ERS1.jpg', 'assets/ERS2.jpg', 'assets/ERS3.jpg', 'assets/ERS4.jpg', 'assets/ERS5.jpg', 'assets/ERS6.jpg', 'assets/ERS7.jpg', 'assets/ERS8.jpg', 'assets/ERSA1.jpg', 'assets/ERS2.jpg'],
+    images: ['Assets/ERS1.jpg', 'Assets/ERS2.jpg', 'Assets/ERS3.jpg', 'Assets/ERS4.jpg', 'Assets/ERS5.jpg', 'Assets/ERS6.jpg', 'Assets/ERS7.jpg', 'Assets/ERS8.jpg', 'Assets/ERSA1.jpg', 'Assets/ERS2.jpg'],
     details: `<h3>PulsePoint (Emergency Response System)</h3>
 						<h4><u>Frameworks/Tools/Languages Used:</u></h4>
 						<p> PHP, JavaScript, CSS, HTML, JAVA, SQLs (for Analytics), Microsoft Access (for Storing Information for the Dispatchers and Respondents) and Microsoft Excel (for Incident Reports)</p><br>
@@ -22,7 +22,7 @@ const projects = {
 						<p>In some situations, callers were unable to provide a clear or valid address, whether due to distress, unfamiliar surroundings, or technical limitations. To solve this, we built an automatic fallback feature into the incident creation process. If the address field was left blank or marked as “Unknown,” the system would instantly trigger a backup location-gathering mechanism. The way it worked is that the system would generate a secure SMS message to the caller’s phone number. This message included a link to a location-tracking page, custom-built to work on mobile devices. When the caller tapped the link, the page used browser-based geolocation (e.g., .geolocation) to request their device’s current coordinates. Once approved, the location data was sent back to our system and displayed on a Google Maps-integrated dashboard, allowing the respondent to reach them quickly and accurately. To securely send the SMS, we authenticated our request using Base64-encoded API credentials and connected to a third-party SMS service (SMSPortal) to dispatch the message in real time. This ensured that the entire process remained secure, fast, and reliable. By integrating this feature directly into the incident creation workflow, we eliminated the risk of losing valuable time due to missing location data, ensuring that no emergency would go unanswered, even in the most difficult scenarios.</p>`
   },
   project2: {
-    images: ['assets/TOH1.png','assets/TOH2.png','assets/TOH3.png','assets/TOH4.png','assets/TOH5.png','assets/TOH6.png','assets/TOH7.png','assets/TOH8.png','assets/TOH9.png'],
+    images: ['Assets/TOH1.png','Assets/TOH2.png','Assets/TOH3.png','Assets/TOH4.png','Assets/TOH5.png','Assets/TOH6.png','Assets/TOH7.png','Assets/TOH8.png','Assets/TOH9.png'],
     details: `<h3>Towers of Hanoi</h3>
 						<h4><u>Frameworks/Tools/Languages Used:</u></h4>
 						<p>Unity Engine, C#</p><br>
@@ -43,7 +43,7 @@ const projects = {
 						
   },
     project3: {
-    images: ['assets/FB1.png', 'assets/FB2.png', 'assets/FB3.png'],
+    images: ['Assets/FB1.png', 'Assets/FB2.png', 'Assets/FB3.png'],
     details: `<h3>Flappy Bird Remake</h3>
 						<h4><u>Frameworks/Tools/Languages Used:</u></h4>
 						<p>Unity Engine, C#</p><br>
