@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  width: 80%;
+  max-width: 900px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+
+}
+
+.close-btn:hover{
+	color: #ff0000;
+
+}
+
+.modal-body {
+  display: flex;
+  height: 100%;
+}
+
+.modal-screenshots {
+  width: 50%;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.modal-screenshots, .modal-details {
+  width: 50%;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.modal-screenshots img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.modal-screenshots img:hover {
+  transform: scale(1.03);
+}
+
+/* Fullscreen Image Modal */
+.image-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.image-viewer img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.image-viewer .close-img {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.image-viewer .nav-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.header {
+  background-image: url('assets/background.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+/* ABOUT MODAL OVERRIDES */
+#aboutModal.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#aboutModal .modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+#aboutModal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#aboutModal .text-section {
+  font-size: 1rem;
+  color: #333;
+}
+
+#aboutModal .download-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Make clickable items show pointer cursor */
+.about-icon,
+.close,
+.download-btn {
+  cursor: pointer;
+}
+
+.project-card {
+  cursor: pointer;
+}
+
+/* Inside the modal, make only the content scrollable */
+.modal-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Optional: tidy scrollbar */
+.modal-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.modal-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* General close button styling */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Optionally: specific style if needed for About Me */
+.about-close {
+  color: #222;
+}
+
+.about-button {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;       /* remove background */
+  border: none;           /* remove any border */
+  padding: 0;             /* remove spacing */
+}
+
+.about-button:hover {
+  color: #007bff;          /* change to standout blue on hover */
+  transform: scale(1.8);   /* slightly enlarge */
+}
+
+
+#aboutModal .download-btn:hover {
+  background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0 }
+  to { transform: translateY(0); opacity: 1 }
+}
+
+.image-viewer .left-arrow { left: 30px; }
+.image-viewer .right-arrow { right: 30px; }
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(100px);}
+  to {transform: translateY(0);}
+}
