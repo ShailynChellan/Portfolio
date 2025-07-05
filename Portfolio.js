@@ -61,7 +61,7 @@ const projects = {
 
   },
    project4: {
-   images: ['assets/MA1.png', 'assets/MA2.png', 'assets/MA3.png', 'assets/MA4.png', 'assets/MA5.png', 'assets/MA6.png', 'assets/MA7.png', 'assets/MA8.png',],
+   images: ['Assets/MA1.png', 'Assets/MA2.png', 'Assets/MA3.png', 'Assets/MA4.png', 'Assets/MA5.png', 'Assets/MA6.png', 'Assets/MA7.png', 'Assets/MA8.png',],
    details: `<h3>Music Archive</h3>
 				<h4><u>Frameworks/Tools/Languages Used:</u></h4>
 				<p>React.js, TypeScript, JavaScript, HTML, CSS</p><br>
